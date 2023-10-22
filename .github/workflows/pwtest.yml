@@ -12,6 +12,7 @@ jobs:
     - run: |
         echo "sanuki---"
         pwd
+        ls
         echo "sanuki---"
 
     - name: Setup dotnet
