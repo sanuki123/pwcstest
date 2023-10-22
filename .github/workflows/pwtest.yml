@@ -8,6 +8,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      run: |
+        echo "sanuki---"
+        pwd
+        echo "sanuki---"
 
     - name: Setup dotnet
       uses: actions/setup-dotnet@v3
