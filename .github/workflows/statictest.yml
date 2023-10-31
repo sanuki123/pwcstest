@@ -22,6 +22,6 @@ jobs:
       run: |
         pwd
         ls
-        dotnet format --check
+        dotnet format --verify-no-changes
 
 
