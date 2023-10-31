@@ -23,6 +23,9 @@ jobs:
         pwd
         ls
         echo "-------------------------"
+        sudo locale-gen ja_JP.UTF-8
+        sudo update-locale LANG=ja_JP.UTF-8        
+        echo "-------------------------"
         dotnet format --verify-no-changes
 
 
