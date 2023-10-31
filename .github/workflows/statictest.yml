@@ -1,0 +1,24 @@
+name: Playwright Sanuki Tests
+on:
+  workflow_dispatch:
+  
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - 
+      uses: actions/checkout@v3
+      
+    - 
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+
+    - 
+      run: dotnet tool install --grobal dotnet-format
+
+    - 
+      run: dotnet format --check
+
+
