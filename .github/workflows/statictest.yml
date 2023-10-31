@@ -1,4 +1,4 @@
-name: Playwright Sanuki Tests
+name: Static test
 on:
   workflow_dispatch:
   
