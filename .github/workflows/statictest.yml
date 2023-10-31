@@ -21,7 +21,7 @@ jobs:
     - 
       run: |
         echo "-------------------------"
-        dotnet format --verify-no-changes
+        dotnet format --verify-no-changes --verbosity detailed
         
 
 
