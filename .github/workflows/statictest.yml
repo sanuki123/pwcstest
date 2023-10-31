@@ -19,6 +19,9 @@ jobs:
       run: dotnet tool install --global dotnet-format
 
     - 
-      run: dotnet format --check
+      run: |
+        pwd
+        ls
+        dotnet format --check
 
 
