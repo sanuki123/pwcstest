@@ -15,16 +15,9 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
-    - 
-      # コードフォーマットインストール
-      #run: dotnet tool install --global dotnet-format
-
-    - 
-      # コードフォーマット実行
-      #run: |
-      #  echo "-------------------------"
-      #  dotnet format --verify-no-changes --verbosity detailed
-        
+    -
+      run: |
+        ls
         
     -
       run: |
