@@ -9,8 +9,7 @@ namespace PlaywrightTests
     public class Class1
     {
 
-        public void aaa()
-        {
+        public void aaa() {
             int a = 0;
 
             if(a==1)
