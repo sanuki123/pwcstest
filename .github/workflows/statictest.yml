@@ -21,13 +21,13 @@ jobs:
         
     -
       run: |
-        dotnet user-secrets set "AAA" "1"
-        dotnet user-secrets set "BBB" "1"
-        dotnet user-secrets set "CCC" "1"
+        dotnet user-secrets set "AAA" "1" > /dev/null 2>&1
+        dotnet user-secrets set "BBB" "1" > /dev/null 2>&1
+        dotnet user-secrets set "CCC" "1" > /dev/null 2>&1
 
     -
       run: |
-        dotnet user-secrets remove "AAA"
-        dotnet user-secrets remove "BBB"
-        dotnet user-secrets remove "CCC"
+        dotnet user-secrets remove "AAA" > /dev/null 2>&1
+        dotnet user-secrets remove "BBB" > /dev/null 2>&1
+        dotnet user-secrets remove "CCC" > /dev/null 2>&1
 
