@@ -28,6 +28,6 @@ jobs:
     -
       run: |
         dotnet user-secrets remove "AAA" 
-        dotnet user-secrets remove "BBB" > 
-        dotnet user-secrets remove "CCC" > 
+        dotnet user-secrets remove "BBB" 
+        dotnet user-secrets remove "CCC" 
 
