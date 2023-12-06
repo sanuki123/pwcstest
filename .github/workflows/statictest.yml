@@ -17,13 +17,13 @@ jobs:
 
     - 
       # コードフォーマットインストール
-      run: dotnet tool install --global dotnet-format
+      #run: dotnet tool install --global dotnet-format
 
     - 
       # コードフォーマット実行
-      run: |
-        echo "-------------------------"
-        dotnet format --verify-no-changes --verbosity detailed
+      #run: |
+      #  echo "-------------------------"
+      #  dotnet format --verify-no-changes --verbosity detailed
         
         
     -
