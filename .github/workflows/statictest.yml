@@ -16,12 +16,24 @@ jobs:
         dotnet-version: '6.0.x'
 
     - 
+      # コードフォーマットインストール
       run: dotnet tool install --global dotnet-format
 
     - 
+      # コードフォーマット実行
       run: |
         echo "-------------------------"
         dotnet format --verify-no-changes --verbosity detailed
         
+        
+    -
+      run: |
+        dotnet user-secrets set "AAA" "1"
+        dotnet user-secrets set "BBB" "1"
+        dotnet user-secrets set "CCC" "1"
 
+      run: |
+        dotnet user-secrets remove "AAA"
+        dotnet user-secrets remove "BBB"
+        dotnet user-secrets remove "CCC"
 
