@@ -32,6 +32,7 @@ jobs:
         dotnet user-secrets set "BBB" "1"
         dotnet user-secrets set "CCC" "1"
 
+    -
       run: |
         dotnet user-secrets remove "AAA"
         dotnet user-secrets remove "BBB"
