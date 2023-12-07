@@ -30,9 +30,11 @@ jobs:
         dotnet user-secrets remove "AAA"  > /dev/null 2>&1
         dotnet user-secrets remove "BBB"  > /dev/null 2>&1
         dotnet user-secrets remove "CCC"  > /dev/null 2>&1
+
     -
       run: |
-        sudo apt-get install -y x11-xserver-utils
+        sudo -V
+       
     -
       run: |
-        xrandr
+        xvfb-run --version
