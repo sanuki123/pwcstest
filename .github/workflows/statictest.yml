@@ -30,4 +30,6 @@ jobs:
         dotnet user-secrets remove "AAA"  > /dev/null 2>&1
         dotnet user-secrets remove "BBB"  > /dev/null 2>&1
         dotnet user-secrets remove "CCC"  > /dev/null 2>&1
-
+    -
+      run: |
+        xrandr
